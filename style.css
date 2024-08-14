@@ -169,6 +169,24 @@ section {
   height: 80vh;
 }
 
+.profile-pic-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Height is greater than width to create a vertical rectangle */
+  width: 300px;  /* Adjust width as needed */
+  margin: auto 0;
+  overflow: hidden; /* Ensures the image is cropped to the container size */
+  border-radius: 20px; /* Creates rounded corners */
+}
+
+.profile-pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container without distortion */
+  border-radius: 20px; /* Applies the same rounded corners to the image */
+}
+
 .section__pic-container {
   display: flex;
   height: 400px;
